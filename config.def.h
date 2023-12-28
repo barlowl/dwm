@@ -4,7 +4,7 @@
 #include <X11/XF86keysym.h>
 
 /* constants */
-#define BROWSER "Firefox"
+#define BROWSER "firefox"
 
 /* appearance */
 static const unsigned int borderpx  = 4;        /* border pixel of windows */
@@ -111,8 +111,6 @@ static const Key keys[] = {
     { 0,            XF86XK_AudioRaiseVolume,   spawn,          {.v = upvol } },
     { 0,            XF86XK_AudioLowerVolume,   spawn,          {.v = downvol } },
     { 0,            XF86XK_AudioMute,          spawn,          {.v = mutevol } },
-    /* browser */
-    { MODKEY,                       XK_w,      spawn,          {.v = (const char*[]){ BROWSER, NULL } } },
 };
 
 /* button definitions */
